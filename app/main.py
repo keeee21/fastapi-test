@@ -4,6 +4,7 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
+ENVIRON = os.getenv("ENVIRON")
 
 @app.get("/")
 def read_root():
